@@ -1,0 +1,15 @@
+{
+  "name": "react-test",
+  "version": "1.0.0",
+  "scripts": {
+    "client": "cd client && node start",
+    "server": "node server.js",
+    "start": "concurrently --kill-others-on-fail \"node server\" \"cd client && npm start\""
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "concurrently": "^3.6.0"
+  }
+}
